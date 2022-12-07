@@ -1,9 +1,9 @@
 const express=require('express');
-const Hellocontroller=require('../controllers/hellocontroller')
+const hellocontroller=require('../controllers/hellocontroller')
 
 const router=express.Router();
 
-router.get("/hello.get",Hellocontroller.hello)
-router.post("/hello.post",Hellocontroller.hello);
+router.get("/hello-get",hellocontroller.hello)
+router.post("/hello-post",hellocontroller.hello);
 
 module.exports=router;
